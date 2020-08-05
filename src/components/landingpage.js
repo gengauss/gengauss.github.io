@@ -14,37 +14,37 @@ class LandingPage extends Component {
                         className="avatar-img"
                        />
                        <div className="banner-text">
-                           <h1>welcome to my page</h1>
+                           <h1>Gauss Shiroemon Madeon</h1>
 
                            <div className="social-links">
 
                                {/* LinkedIn */}
-                               <a href="http://google.com" rel="noopener noreferrer" target="_blank">
+                               <a href="https://www.linkedin.com/in/nguyenquynhanh99/" rel="noopener noreferrer" target="_blank">
                                    <i className="fa fa-linkedin-square" aria-hidden="true" />
                                </a>
 
                                {/* Github */}
-                               <a href="http://google.com" rel="noopener noreferrer" target="_blank">
+                               <a href="https://github.com/gengauss" rel="noopener noreferrer" target="_blank">
                                    <i className="fa fa-github-square" aria-hidden="true" />
                                </a>
 
                                {/* Facebook */}
-                               <a href="http://google.com" rel="noopener noreferrer" target="_blank">
+                               <a href="https://m.facebook.com/shiroemon.madeon.7" rel="noopener noreferrer" target="_blank">
                                    <i className="fa fa-facebook-square" aria-hidden="true" />
                                </a>
 
                                {/* Instagram */}
-                               <a href="http://google.com" rel="noopener noreferrer" target="_blank">
+                               <a href="https://www.instagram.com/gaussshiroemon/" rel="noopener noreferrer" target="_blank">
                                    <i className="fa fa-instagram" aria-hidden="true" />
                                </a>
 
                                {/* Twitter */}
-                               <a href="http://google.com" rel="noopener noreferrer" target="_blank">
+                               <a href="http://twitter.com/gaussshiroemon" rel="noopener noreferrer" target="_blank">
                                    <i className="fa fa-twitter-square" aria-hidden="true" />
                                </a>
 
                                {/* Youtube */}
-                               <a href="http://google.com" rel="noopener noreferrer" target="_blank">
+                               <a href="https://www.youtube.com/channel/UChQUoXmV9lBOHR5JrtEO1GQ?view_as=subscriber" target="_blank">
                                    <i className="fa fa-youtube-square" aria-hidden="true" />
                                </a>
 
