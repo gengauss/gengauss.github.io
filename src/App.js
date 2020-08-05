@@ -1,5 +1,4 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import { Layout, Header, Navigation, Drawer, Content} from "react-mdl";
 import Main from './components/main';
@@ -7,9 +6,9 @@ import { Link } from 'react-router-dom';
 
 function App() {
     return (
-        <div>
-            <Layout fixedHeader>
-                <Header title={<span><span style={{color: '#ddd'}}>Area / </span><strong>The Title</strong></span>}>
+        <div className="demo-big-content">
+            <Layout>
+                <Header className="header-color" title="Title" scroll>
                     <Navigation>
                         <Link to="/resume">Resume</Link>
                         <Link to="/aboutme">About Me</Link>
