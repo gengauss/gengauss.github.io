@@ -24,27 +24,27 @@ class LandingPage extends Component {
                                </a>
 
                                {/* Github */}
-                               <a href="https://github.com/gengauss" rel="noopener noreferrer" target="_blank">
+                               <a href="https://github.com/gengauss" rel="noopener noreferrer">
                                    <i className="fa fa-github-square" aria-hidden="true" />
                                </a>
 
                                {/* Facebook */}
-                               <a href="https://m.facebook.com/shiroemon.madeon.7" rel="noopener noreferrer" target="_blank">
+                               <a href="https://m.facebook.com/shiroemon.madeon.7" rel="noopener noreferrer">
                                    <i className="fa fa-facebook-square" aria-hidden="true" />
                                </a>
 
                                {/* Instagram */}
-                               <a href="https://www.instagram.com/gaussshiroemon/" rel="noopener noreferrer" target="_blank">
+                               <a href="https://www.instagram.com/gaussshiroemon/" rel="noopener noreferrer">
                                    <i className="fa fa-instagram" aria-hidden="true" />
                                </a>
 
                                {/* Twitter */}
-                               <a href="http://twitter.com/gaussshiroemon" rel="noopener noreferrer" target="_blank">
+                               <a href="http://twitter.com/gaussshiroemon" rel="noopener noreferrer">
                                    <i className="fa fa-twitter-square" aria-hidden="true" />
                                </a>
 
                                {/* Youtube */}
-                               <a href="https://www.youtube.com/channel/UChQUoXmV9lBOHR5JrtEO1GQ?view_as=subscriber" target="_blank">
+                               <a href="https://www.youtube.com/channel/UChQUoXmV9lBOHR5JrtEO1GQ?view_as=subscriber">
                                    <i className="fa fa-youtube-square" aria-hidden="true" />
                                </a>
 
