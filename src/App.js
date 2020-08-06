@@ -8,7 +8,7 @@ function App() {
     return (
         <div className="demo-big-content">
             <Layout>
-                <Header className="header-color" title={<a href="/">ANH NGUYEN</a>}>
+                <Header className="header-color" title={<a href="/me">ANH NGUYEN</a>}>
                     <Navigation>
                         <Link to="/resume">Resume</Link>
                         <Link to="/aboutme">About Me</Link>
@@ -16,7 +16,7 @@ function App() {
                         <Link to="/contact">Contact</Link>
                     </Navigation>
                 </Header>
-                <Drawer className="header-color" title={<a href="/">ANH NGUYEN</a>}>
+                <Drawer className="header-color" title={<a href="/me">ANH NGUYEN</a>}>
                     <Navigation>
                         <Link to="/resume">Resume</Link>
                         <Link to="/aboutme">About Me</Link>
