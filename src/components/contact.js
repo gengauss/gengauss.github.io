@@ -16,7 +16,7 @@ class Contact extends Component {
                             className="avatar-img"
                             style={{height: '250px'}}
                         />
-                        <p style={{ width: '75%', margin: 'auto', paddingTop: '1em'}}>Hello, my name is Anh. Nice to meet you!</p>
+                        <p style={{ width: '75%', margin: 'auto', paddingTop: '2em'}}>Hello, my name is Anh. Nice to meet you!</p>
 
                     </Cell>
                     <Cell col={6}>
@@ -26,21 +26,21 @@ class Contact extends Component {
                         <div className="contact-list">
                             <List>
                                 <ListItem>
-                                    <ListItemContent style={{fontSize: '25px', fontFamily: 'Anton'}}>
+                                    <ListItemContent style={{fontSize: '25px'}} className="list">
                                         <i className="fa fa-phone-square" aria-hidden="true"/>
                                         (+81) 070-4035-8554
                                     </ListItemContent>
                                 </ListItem>
 
                                 <ListItem>
-                                    <ListItemContent style={{fontSize: '25px', fontFamily: 'Anton'}}>
+                                    <ListItemContent style={{fontSize: '25px'}} className="list">
                                         <i className="fa fa-phone-square" aria-hidden="true"/>
                                         (+84) 0989-393-853
                                     </ListItemContent>
                                 </ListItem>
 
                                 <ListItem>
-                                    <ListItemContent style={{fontSize: '25px', fontFamily: 'Anton'}}>
+                                    <ListItemContent style={{fontSize: '25px'}} className="list">
                                         <i className="fa fa-envelope" aria-hidden="true"/>
                                         nguyenqanh1804@gmail.com
                                     </ListItemContent>

@@ -33,13 +33,12 @@ class Resume extends Component {
                         <p>+81-70-4035-8554</p>
                         <h5>Email</h5>
                         <p>nguyenqanh1804@gmail.com</p>
-                        <h5>Web</h5>
-                        <p>mywebsite.com</p>
+                        <h5>Website</h5>
+                        <p>http://gengauss.github.io/</p>
                         <hr style={{borderTop: '3px solid #833fb2', width: '50%'}}/>
                     </Cell>
                     <Cell className="resume-right-col" col={8}>
                         <h2>Education</h2>
-
 
                         <Education
                             startYear={2014}
@@ -101,8 +100,6 @@ class Resume extends Component {
                             skill="Laravel"
                             progress={50}
                         />
-
-
                     </Cell>
                 </Grid>
             </div>

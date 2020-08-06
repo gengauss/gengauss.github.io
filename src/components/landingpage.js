@@ -14,8 +14,6 @@ class LandingPage extends Component {
                         className="avatar-img"
                        />
                        <div className="banner-text">
-                           <h1>Gauss Shiroemon Madeon</h1>
-
                            <div className="social-links">
 
                                {/* LinkedIn */}
