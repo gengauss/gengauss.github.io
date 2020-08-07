@@ -15,7 +15,6 @@ class LandingPage extends Component {
                        />
 
                        <div className="social-links">
-
                            {/* LinkedIn */}
                            <div className="card">
                            <a href="https://www.linkedin.com/in/nguyenquynhanh99/" rel="noopener noreferrer" target="_blank">
@@ -57,7 +56,6 @@ class LandingPage extends Component {
                                <i className="fa fa-youtube-square" aria-hidden="true" />
                            </a>
                            </div>
-
                        </div>
                    </Cell>
                </Grid>
