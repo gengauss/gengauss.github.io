@@ -3,11 +3,13 @@ import './App.css';
 import { Layout, Header, Navigation, Drawer, Content } from 'react-mdl';
 import Main from './components/main';
 import { Link } from 'react-router-dom';
+import Home from "./components/";
 
 class App extends Component {
     render() {
         return (
             <div className="demo-big-content">
+                <Home />
                 <Layout>
                     <Header className="header-color" title={<Link style={{textDecoration: 'none', color: 'white'}} to="/">ANH NGUYEN</Link>} scroll>
                         <Navigation>
