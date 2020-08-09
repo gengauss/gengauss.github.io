@@ -23,17 +23,18 @@ import Footer from './Footer'
 const useStyles = makeStyles(theme => ({
     menuSliderContainer: {
         width: 250,
-        background: "#511",
-        height: "100%"
+        background: "#aed6dc",
+        height: "100%",
+        fontSize: 14
     },
     avatar: {
         display: "block",
-        margin: "0.5rem auto",
-        width: theme.spacing(13),
-        height: theme.spacing(13),
+        margin: "5rem auto",
+        width: theme.spacing(15),
+        height: theme.spacing(15),
     },
     listItem: {
-        color: "tan"
+        color: "#4a536b"
     }
 }));
 
@@ -71,7 +72,7 @@ const Navbar = () => {
     const sideList = slider => (
         <Box className={classes.menuSliderContainer} component="div"
              onClick={toggleSlider(slider, false)}>
-            <Avatar className={classes.avatar} src={avatar} alt="Russel Crowe"/>
+            <Avatar className={classes.avatar} src={avatar} alt="Anh Nguyen"/>
             <Divider/>
             <List>
                 {menuItems.map((lsItem, key) => (
@@ -86,12 +87,12 @@ const Navbar = () => {
     return (
         <>
             <Box component="nav">
-                <AppBar position="static" style={{background: "#222"}}>
+                <AppBar position="static" style={{background: "#ff9a8d"}}>
                     <Toolbar>
                         <IconButton onClick={toggleSlider("right", true)}>
-                            <ArrowBack style={{color: "tomato"}}/>
+                            <ArrowBack style={{color: "#aed6dc"}}/>
                         </IconButton>
-                        <Typography variant="h5" style={{color: "tan"}}>
+                        <Typography variant="h5" style={{color: "#304040"}}>
                             NGUYEN ANH
                         </Typography>
                         <MobilRightMenuSlider

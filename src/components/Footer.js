@@ -11,10 +11,10 @@ const useStyles = makeStyles({
             maxWidth: 250
         },
         "& .MuiSvgIcon-root": {
-            fill: "tan",
+            fill: "#4a536b",
             "&:hover": {
-                fill: "tomato",
-                fontsize: "1.8rem"
+                fill: "#ff9a8d",
+                fontsize: "2.8rem"
             }
         }
     },
@@ -23,18 +23,21 @@ const useStyles = makeStyles({
 const Footer = () => {
     const classes = useStyles()
     return (
-        <BottomNavigation width="auto" style={{background: "#222"}}>
+        <BottomNavigation width="auto" style={{background: "#aed6dc"}}>
             <BottomNavigationAction
+                href="https://facebook.com/shiroemon.madeon.7"
                 className={classes.root}
                 style={{padding: 0}}
                 icon={<Facebook/>}
             />
             <BottomNavigationAction
+                href="https://twitter.com/gaussshiroemon"
                 className={classes.root}
                 style={{padding: 0}}
                 icon={<Twitter/>}
             />
             <BottomNavigationAction
+                href="https://www.instagram.com/gaussshiroemon/"
                 className={classes.root}
                 style={{padding: 0}}
                 icon={<Instagram/>}

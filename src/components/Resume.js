@@ -2,10 +2,12 @@ import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import { Typography, Box } from "@material-ui/core";
 import Navbar from "./Navbar";
+import Skills from './skills';
+import {Grid, Cell} from "react-mdl";
 
 const useStyles = makeStyles(theme => ({
     mainContainer: {
-        background: "#233"
+        background: "#4a536b"
     },
     timeLine: {
         position: "relative",
@@ -15,7 +17,7 @@ const useStyles = makeStyles(theme => ({
             content: "''",
             position: "absolute",
             height: "100%",
-            border: "1px solid tan",
+            border: "1px solid #aed6dc",
             right: "40px",
             top: 0
         },
@@ -34,7 +36,7 @@ const useStyles = makeStyles(theme => ({
     },
     timeLineItem : {
         padding: "1rem",
-        borderBottom: "2px solid tan",
+        borderBottom: "2px solid #aed6dc",
         position: "relative",
         margin: "1rem 3rem 1rem 1rem",
         clear: "both",
@@ -48,7 +50,7 @@ const useStyles = makeStyles(theme => ({
             right: "-0.625rem",
             top: "calc(50%-5px)",
             borderStyle: "solid",
-            borderColor: "tomato tomato transparent transparent",
+            borderColor: "#ff9a8d #ff9a8d transparent transparent",
             borderWidth: "0.625rem",
             transform: "rotate(45deg)"
         },
@@ -58,12 +60,12 @@ const useStyles = makeStyles(theme => ({
             "&:nth-of-type(2n)": {
                 float: "right",
                 margin: "1rem",
-                borderColor: "tan"
+                borderColor: "#aed6dc"
             },
             "&:nth-of-type(2n):before": {
                 right: "auto",
                 left: "-0.625rem",
-                borderColor: "transparent transparent tomato tomato"
+                borderColor: "transparent transparent #ff9a8d #ff9a8d"
             }
         }
     },
@@ -71,8 +73,8 @@ const useStyles = makeStyles(theme => ({
         textAlign: "center",
         maxWidth: "9.375rem",
         margin: "0 3rem 0 auto",
-        fontSize: "1.8rem",
-        background: "tomato",
+        fontSize: "1.6rem",
+        background: "#ff9a8d",
         color: "white",
         lineHeight: 1,
         padding: "0.5 rem 0.1rem",
@@ -92,13 +94,15 @@ const useStyles = makeStyles(theme => ({
         }
     },
     heading : {
-        color: "tomato",
-        padding: "3rem 0",
+        color: "#ff9a8d",
+        padding: "2rem 0",
+        fontSize: "1.8rem",
         textTransform: "uppercase"
     },
     subHeading : {
         color: "white",
         padding: "0",
+        fontSize: "1.4rem",
         textTransform: "uppercase"
     }
 }));
@@ -121,10 +125,10 @@ const Resume = () => {
                         <Typography variant="h5" className={classes.subHeading}>
                             HUS High School for Gifted Students
                         </Typography>
-                        <Typography variant="body1" style={{color: "tomato"}}>
+                        <Typography variant="body1" style={{color: "#ff9a8d"}}>
                             Informatics Specialized Class
                         </Typography>
-                        <Typography variant="subtitle1" style={{color: "tan"}}>
+                        <Typography variant="subtitle1" style={{color: "#aed6dc"}}>
                             GPA: 9.5/10
                         </Typography>
                     </Box>
@@ -136,10 +140,10 @@ const Resume = () => {
                         <Typography variant="h5" className={classes.subHeading}>
                             University of Engineering and Technology, VNU
                         </Typography>
-                        <Typography variant="body1" style={{color: "tomato"}}>
+                        <Typography variant="body1" style={{color: "#ff9a8d"}}>
                             Faculty of Information Technology
                         </Typography>
-                        <Typography variant="subtitle1" style={{color: "tan"}}>
+                        <Typography variant="subtitle1" style={{color: "#aed6dc"}}>
                             GPA: 3.6/4.0
                         </Typography>
                     </Box>
@@ -151,14 +155,91 @@ const Resume = () => {
                         <Typography variant="h5" className={classes.subHeading}>
                             Toyo University
                         </Typography>
-                        <Typography variant="body1" style={{color: "tomato"}}>
+                        <Typography variant="body1" style={{color: "#ff9a8d"}}>
                             Faculty of Information Networking for Innovation and Design (INIAD)
                         </Typography>
-                        <Typography variant="subtitle1" style={{color: "tan"}}>
+                        <Typography variant="subtitle1" style={{color: "#aed6dc"}}>
                             GPA: 4.16/4.3
                         </Typography>
                     </Box>
                 </Box>
+            </Box>
+            <Box className={classes.mainContainer}>
+                <Typography variant="h4" align="center" className={classes.heading}>
+                    WORK EXPERIENCE
+                </Typography>
+                <Box component="div" className={classes.timeLine}>
+                    <Typography
+                        variant="h2"
+                        className={`${classes.timeLineYear} ${classes.timeLineItem}`}>2019
+                    </Typography>
+                    <Box component="div" className={classes.timeLineItem}>
+                        <Typography variant="h5" className={classes.subHeading}>
+                            株式会社atta
+                        </Typography>
+                        <Typography variant="body1" style={{color: "#ff9a8d"}}>
+                            Data Science Intern
+                        </Typography>
+                        <Typography variant="subtitle1" style={{color: "#aed6dc"}}>
+                            Flight and Hotel Price Prediction <br/>
+                            Data visualization and models improvement for training data
+                        </Typography>
+                    </Box>
+                </Box>
+            </Box>
+            <Box className={classes.mainContainer}>
+                <Grid>
+                    <Cell col={6}>
+                        <Typography variant="h4" align="center" className={classes.heading}>
+                            SKILLS
+                        </Typography>
+                        <Skills
+                            skill="Python"
+                            progress={90}
+                        />
+                        <Skills
+                            skill="C/C++"
+                            progress={90}
+                        />
+                        <Skills
+                            skill="Django"
+                            progress={80}
+                        />
+                        <Skills
+                            skill="Machine Learning"
+                            progress={80}
+                        />
+                        <Skills
+                            skill="Data Analysis"
+                            progress={80}
+                        />
+                        <Skills
+                            skill="PHP"
+                            progress={40}
+                        />
+                        <Skills
+                            skill="Laravel"
+                            progress={40}
+                        />
+                    </Cell>
+                    <Cell col={6}>
+                        <Typography variant="h4" align="center" className={classes.heading}>
+                            LANGUAGES
+                        </Typography>
+                        <Skills
+                            skill="Vietnamese"
+                            progress={100}
+                        />
+                        <Skills
+                            skill="English"
+                            progress={90}
+                        />
+                        <Skills
+                            skill="Japanese"
+                            progress={70}
+                        />
+                    </Cell>
+                </Grid>
             </Box>
         </>
     )

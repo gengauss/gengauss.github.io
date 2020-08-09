@@ -9,14 +9,14 @@ const useStyles = makeStyles(theme => ({
     avatar: {
         width: theme.spacing(20),
         height: theme.spacing(20),
-        margin: theme.spacing(1)
+        margin: theme.spacing(5)
     },
     title: {
-        color: "tomato",
+        color: "#aed6dc",
         fontSize: "25px"
     },
     subtitle: {
-        color: "tan",
+        color: "#ff9a8d",
         marginBottom: "3rem",
         fontSize: "20px"
     },
@@ -36,7 +36,7 @@ const Header = () => {
     return (
         <Box className={classes.typedContainer}>
             <Grid container justify="center">
-                <Avatar className={classes.avatar} src={avatar} alt="Russel Crowe"/>
+                <Avatar className={classes.avatar} src={avatar} alt="Nguyen Anh"/>
             </Grid>
             <Typography className={classes.title} variant="h4">
                 <Typed strings={["NGUYEN ANH"]} typeSpeed={40} />
