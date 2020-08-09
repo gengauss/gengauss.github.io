@@ -1,10 +1,7 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './App.css';
 import {Route} from "react-router-dom";
 import CssBaseline from "@material-ui/core/CssBaseline";
-import { Layout, Header, Navigation, Drawer, Content } from 'react-mdl';
-import Main from './components/main';
-import { Link } from 'react-router-dom';
 import Home from "./components/";
 import Resume from "./components/Resume";
 
