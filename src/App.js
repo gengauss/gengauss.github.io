@@ -4,6 +4,8 @@ import {Route} from "react-router-dom";
 import CssBaseline from "@material-ui/core/CssBaseline";
 import Home from "./components/";
 import Resume from "./components/Resume";
+import Portfolio from "./components/Portfolio";
+
 
 function App() {
     return (
@@ -11,6 +13,7 @@ function App() {
         <CssBaseline />
         <Route exact path="/" component={Home} />
         <Route path="/resume" component={Resume} />
+        <Route path="/portfolio" component={Portfolio} />
         </>
         // <div className="demo-big-content">
         //     <Home />

@@ -56,11 +56,13 @@ const menuItems = [
     },
     {
         lilsticon: <Apps/>,
-        listText: "Portfolio"
+        listText: "Portfolio",
+        listPath: "/portfolio"
     },
     {
         lilsticon: <ContactMail/>,
-        listText: "Contacts"
+        listText: "Contacts",
+        listPath: "/contacts"
     }
 ]
 
