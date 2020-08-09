@@ -1,4 +1,5 @@
 import React, {useState} from 'react'
+import { Link } from "react-router-dom"
 import {
     AppBar,
     Toolbar,
@@ -45,11 +46,13 @@ const useStyles = makeStyles(theme => ({
 const menuItems = [
     {
         lilsticon: <Home/>,
-        listText: "Home"
+        listText: "Home",
+        listPath: "/"
     },
     {
         lilsticon: <AssignmentInd/>,
-        listText: "Resume"
+        listText: "Resume",
+        listPath: "/resume"
     },
     {
         lilsticon: <Apps/>,
@@ -76,7 +79,7 @@ const Navbar = () => {
             <Divider/>
             <List>
                 {menuItems.map((lsItem, key) => (
-                    <ListItem button>
+                    <ListItem button key={key} component={Link} to={lsItem.listPath}>
                         <ListItemIcon className={classes.listItem}>{lsItem.lilsticon}</ListItemIcon>
                         <ListItemText className={classes.listItem} primary={lsItem.listText}/>
                     </ListItem>
