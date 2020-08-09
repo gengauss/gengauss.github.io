@@ -7,7 +7,7 @@ import {makeStyles} from "@material-ui/core/styles";
 const useStyles = makeStyles({
     particlesCanva: {
         position: "fixed",
-        // opacity: "0.5"
+        opacity: "0.5"
     }
 })
 
@@ -18,7 +18,7 @@ const Home = () => {
             <Navbar/>
             <Header/>
             <Particles
-                style={{backgroundColor: "#4a536b"}}
+                style={{backgroundColor: "black"}}
                 canvasClassName={classes.particlesCanva}
                 params={{
                     particles: {
