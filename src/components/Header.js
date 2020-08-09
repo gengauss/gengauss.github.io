@@ -12,11 +12,13 @@ const useStyles = makeStyles(theme => ({
         margin: theme.spacing(1)
     },
     title: {
-        color: "tomato"
+        color: "tomato",
+        fontSize: "25px"
     },
     subtitle: {
         color: "tan",
-        marginBottom: "3rem"
+        marginBottom: "3rem",
+        fontSize: "20px"
     },
     typedContainer: {
         position: "absolute",
@@ -41,7 +43,7 @@ const Header = () => {
             </Typography>
             <br/>
             <Typography className={classes.subtitle} variant="h4">
-                <Typed strings={["a full-time student", "a part-time data scientist", "photographer"]}
+                <Typed strings={["INIAD", "東洋大学", "株式会社atta"]}
                        typeSpeed={40}
                        backSpeed={80}
                        loop/>
