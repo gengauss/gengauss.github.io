@@ -1,29 +1,23 @@
 import React, {useState} from 'react'
-import { Link } from "react-router-dom"
+import {Link} from "react-router-dom"
 import {
     AppBar,
-    Toolbar,
-    ListItem,
-    IconButton,
-    ListItemText,
-    ListItemIcon,
     Avatar,
+    Box,
     Divider,
+    IconButton,
     List,
-    Typography,
-    Box
+    ListItem,
+    ListItemIcon,
+    ListItemText,
+    Toolbar,
+    Typography
 } from "@material-ui/core";
-import { Icon } from '@material-ui/core';
-import { makeStyles } from "@material-ui/core/styles";
+import {makeStyles} from "@material-ui/core/styles";
 import MobilRightMenuSlider from "@material-ui/core/Drawer"
-import {
-    ArrowBack,
-    AssignmentInd,
-    Home,
-    Apps,
-    ContactMail
-} from "@material-ui/icons";
+import {Apps, ArrowBack, AssignmentInd, ContactMail, Home} from "@material-ui/icons";
 import avatar from '../avatar.png'
+import Footer from './Footer'
 
 // CSS STYLES
 const useStyles = makeStyles(theme => ({
@@ -76,7 +70,7 @@ const Navbar = () => {
     const classes = useStyles();
     const sideList = slider => (
         <Box className={classes.menuSliderContainer} component="div"
-        onClick={toggleSlider(slider, false)}>
+             onClick={toggleSlider(slider, false)}>
             <Avatar className={classes.avatar} src={avatar} alt="Russel Crowe"/>
             <Divider/>
             <List>
@@ -91,25 +85,26 @@ const Navbar = () => {
     )
     return (
         <>
-        <Box component="nav">
-            <AppBar position="static" style={{background: "#222"}}>
-                <Toolbar>
-                    <IconButton onClick={toggleSlider("right", true)}>
-                        <ArrowBack style={{color: "tomato"}}/>
-                    </IconButton>
-                    <Typography variant="h5" style={{color: "tan"}}>
-                        NGUYEN ANH
-                    </Typography>
-                    <MobilRightMenuSlider
-                        // anchor="right"
-                        open={state.right}
-                        onClose={toggleSlider("right", false)}
-                    >
-                        {sideList("right")}
-                    </MobilRightMenuSlider>
-                </Toolbar>
-            </AppBar>
-        </Box>
+            <Box component="nav">
+                <AppBar position="static" style={{background: "#222"}}>
+                    <Toolbar>
+                        <IconButton onClick={toggleSlider("right", true)}>
+                            <ArrowBack style={{color: "tomato"}}/>
+                        </IconButton>
+                        <Typography variant="h5" style={{color: "tan"}}>
+                            NGUYEN ANH
+                        </Typography>
+                        <MobilRightMenuSlider
+                            // anchor="right"
+                            open={state.right}
+                            onClose={toggleSlider("right", false)}
+                        >
+                            {sideList("right")}
+                            <Footer/>
+                        </MobilRightMenuSlider>
+                    </Toolbar>
+                </AppBar>
+            </Box>
         </>
     )
 }
