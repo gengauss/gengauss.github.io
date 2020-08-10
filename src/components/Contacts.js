@@ -135,7 +135,7 @@ const Contacts = () => {
                     {/*    send*/}
                     {/*</Button>*/}
                     <br/>
-                    <Grid container justify="center" alignItems="center" style={{margin: "7px"}}>
+                    <Grid container justify="center" alignItems="center" style={{margin: "6px"}}>
                         <Button
                             href="https://facebook.com/shiroemon.madeon.7"
                             className={classes.root}
