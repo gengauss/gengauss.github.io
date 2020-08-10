@@ -9,6 +9,7 @@ import Instagram from "@material-ui/icons/Instagram";
 import YouTube from '@material-ui/icons/YouTube';
 import Email from '@material-ui/icons/Email';
 import Phone from '@material-ui/icons/Phone';
+import Button from '@material-ui/core/Button';
 
 
 const useStyles = makeStyles(theme => ({
@@ -29,7 +30,7 @@ const useStyles = makeStyles(theme => ({
     },
     root : {
         color: "#aed6dc",
-        fontSize: 50
+        fontSize: 50,
     }
 }))
 
@@ -62,7 +63,7 @@ const Contacts = () => {
         <Box component="div" style={{background: "#4a536b", height: "100vh", width: "200vh"}}>
             <Navbar />
             <Particles
-                style={{backgroundColor: "#4a536b", position: "fixed"}}
+                style={{backgroundColor: "#1b2735", position: "fixed"}}
                 canvasClassName={classes.particlesCanva}
                 params={{
                     particles: {
@@ -106,13 +107,12 @@ const Contacts = () => {
                 <Box className={classes.form} style={{position: "fixed"}}>
                     <Typography variant="h5"
                                 style={{
-                                    color: "#ff9a8d",
+                                    color: "#e5e5e5",
                                     textAlign: "center",
                                     textTransform: "uppercase"
                                 }}>
                         contact info
                     </Typography>
-                    <br/>
                     <br/>
                     <Typography variant="h6"
                                 style={{
@@ -134,30 +134,31 @@ const Contacts = () => {
                     {/*<Button className={classes.button} variant="outlined" fullWidth={true} endIcon={<SendIcon/>}>*/}
                     {/*    send*/}
                     {/*</Button>*/}
+                    <br/>
                     <Grid container justify="center" alignItems="center">
-                        <Facebook
-                            href="https://www.linkedin.com/in/nguyenquynhanh99/"
-                            className={classes.root}
-                            style={{padding: 0}}
-                            icon={<Facebook/>}
-                        />
-                        <Twitter
+                        <Button
                             href="https://facebook.com/shiroemon.madeon.7"
                             className={classes.root}
                             style={{padding: 0}}
-                            icon={<Twitter/>}
+                            startIcon={<Facebook />}
                         />
-                        <Instagram
+                        <Button
+                            href="https://twitter.com/gaussshiroemon"
+                            className={classes.root}
+                            style={{padding: 0}}
+                            startIcon={<Twitter/>}
+                        />
+                        <Button
                             href="https://www.instagram.com/gaussshiroemon"
                             className={classes.root}
                             style={{padding: 0}}
-                            icon={<Instagram/>}
+                            startIcon={<Instagram/>}
                         />
-                        <YouTube
+                        <Button
                             href="https://www.youtube.com/channel/UChQUoXmV9lBOHR5JrtEO1GQ"
                             className={classes.root}
                             style={{padding: 0}}
-                            icon={<YouTube/>}
+                            startIcon={<YouTube/>}
                         />
                     </Grid>
                     <br/>

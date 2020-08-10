@@ -23,7 +23,7 @@ import Footer from './Footer'
 const useStyles = makeStyles(theme => ({
     menuSliderContainer: {
         width: 250,
-        background: "#85B3D1FF",
+        background: "#457b9d",
         height: "100%",
         fontSize: 14
     },
@@ -34,7 +34,7 @@ const useStyles = makeStyles(theme => ({
         height: theme.spacing(15),
     },
     listItem: {
-        color: "#4a536b"
+        color: "#ffffff"
     }
 }));
 
@@ -90,9 +90,9 @@ const Navbar = () => {
                 <AppBar position="static" style={{background: "#ff9a8d"}}>
                     <Toolbar>
                         <IconButton onClick={toggleSlider("right", true)}>
-                            <Menu style={{fontSize: 30, color: "#85B3D1FF"}}/>
+                            <Menu style={{fontSize: 30, color: "#457b9d"}}/>
                         </IconButton>
-                        <Typography variant="h5" style={{color: "#4a536b"}}>
+                        <Typography variant="h5" style={{color: "#1b2735"}}>
                             NGUYEN ANH
                         </Typography>
                         <MobilRightMenuSlider

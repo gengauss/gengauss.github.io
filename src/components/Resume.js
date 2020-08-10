@@ -6,7 +6,7 @@ import {Cell, Grid} from "react-mdl";
 
 const useStyles = makeStyles(theme => ({
     mainContainer: {
-        background: "#4a536b"
+        background: "#1b2735",
     },
     timeLine: {
         position: "relative",
@@ -109,7 +109,7 @@ const useStyles = makeStyles(theme => ({
 const Resume = () => {
     const classes = useStyles()
     return (
-        <>
+        <div style={{height: "100vh"}}>
             <Navbar />
             <Box component="header" className={classes.mainContainer}>
                 <Typography variant="h4" align="center" className={classes.heading}>
@@ -196,6 +196,9 @@ const Resume = () => {
                             <li class="html">Python</li>
                             <li class="css">C/C++</li>
                             <li class="js">Django</li>
+                            <li className="html">Python</li>
+                            <li className="css">C/C++</li>
+                            <li className="js">Django</li>
                         </ul>
                     </Cell>
                     <Cell col={6}>
@@ -210,7 +213,7 @@ const Resume = () => {
                     </Cell>
                 </Grid>
             </Box>
-        </>
+        </div>
     )
 }
 

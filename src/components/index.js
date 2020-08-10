@@ -17,7 +17,7 @@ const Home = () => {
             <Navbar/>
             <Header/>
             <Particles
-                style={{backgroundColor: "#4a536b"}}
+                style={{backgroundColor: "#1b2735"}}
                 canvasClassName={classes.particlesCanva}
                 params={{
                     particles: {

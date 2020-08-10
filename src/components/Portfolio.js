@@ -12,11 +12,14 @@ import {
     Typography
 } from "@material-ui/core"
 import Navbar from "./Navbar";
-import project3 from "../images/react-redux.jpg"
+import project1 from "../images/dnatracker.png"
+import project2 from "../images/cslearning.jpeg"
+import project3 from "../images/findingfriend.jpeg"
+
 
 const useStyles = makeStyles({
     mainContainer: {
-        background: "#4a536b",
+        background: "#1b2735",
         minHeight: "100vh"
     },
     cardContainer: {
@@ -24,8 +27,7 @@ const useStyles = makeStyles({
         margin: "5rem auto"
     },
     particlesCanva: {
-        position: "fixed",
-        opacity: "0.5"
+        position: "fixed"
     }
 })
 
@@ -35,33 +37,34 @@ const Portfolio = () => {
         <Box component="div" className={classes.mainContainer}>
             <Navbar/>
             <Grid container justify="center" alignItems="center">
-                {/* Project 1 */}
+                {/* Project 3 */}
                 <Grid item xs={12} sm={8} md={6}>
                     <Card className={classes.cardContainer}>
                         <CardActionArea>
                             <CardMedia
                                 component="img"
-                                alt="Project 1"
+                                alt="Project 3"
                                 height="140"
                                 image={project3}
                             />
                             <CardContent>
                                 <Typography gutterBottom variant="h5">
-                                    Project 1
+                                    FindingFriendApp (2019)
                                 </Typography>
                                 <Typography variant="body2" color="textSecondary" component="p">
-                                    This is the Project 1
+                                    This is a platform to help people finding friends base on their preferences. <br/>
+                                    University group project.
                                 </Typography>
                             </CardContent>
                         </CardActionArea>
-                        <CardActions>
-                            <Button size="small" color="primary">
-                                Share
-                            </Button>
-                            <Button size="small" color="primary">
-                                Live Demo
-                            </Button>
-                        </CardActions>
+                        {/*<CardActions>*/}
+                        {/*    <Button size="small" color="primary">*/}
+                        {/*        Share*/}
+                        {/*    </Button>*/}
+                        {/*    <Button size="small" color="primary">*/}
+                        {/*        Live Demo*/}
+                        {/*    </Button>*/}
+                        {/*</CardActions>*/}
                     </Card>
                 </Grid>
                 {/* Project 2 */}
@@ -72,85 +75,56 @@ const Portfolio = () => {
                                 component="img"
                                 alt="Project 2"
                                 height="140"
-                                image={project3}
+                                image={project2}
                             />
                             <CardContent>
                                 <Typography gutterBottom variant="h5">
-                                    Project 2
+                                    CSLearning (2018)
                                 </Typography>
                                 <Typography variant="body2" color="textSecondary" component="p">
-                                    This is the Project 2
+                                    A website that helps people who are interested in programming can study by themselves. <br/>
+                                    University group project.
                                 </Typography>
                             </CardContent>
                         </CardActionArea>
-                        <CardActions>
-                            <Button size="small" color="primary">
-                                Share
-                            </Button>
-                            <Button size="small" color="primary">
-                                Live Demo
-                            </Button>
-                        </CardActions>
+                        {/*<CardActions>*/}
+                        {/*    <Button size="small" color="primary">*/}
+                        {/*        Share*/}
+                        {/*    </Button>*/}
+                        {/*    <Button size="small" color="primary">*/}
+                        {/*        Live Demo*/}
+                        {/*    </Button>*/}
+                        {/*</CardActions>*/}
                     </Card>
                 </Grid>
-                {/*/!* Project 3 *!/*/}
-                {/*<Grid item xs={12} sm={8} md={6}>*/}
-                {/*    <Card className={classes.cardContainer}>*/}
-                {/*        <CardActionArea>*/}
-                {/*            <CardMedia*/}
-                {/*                component="img"*/}
-                {/*                alt="Project 3"*/}
-                {/*                height="140"*/}
-                {/*                image={project3}*/}
-                {/*            />*/}
-                {/*            <CardContent>*/}
-                {/*                <Typography gutterBottom variant="h5">*/}
-                {/*                    Project 3*/}
-                {/*                </Typography>*/}
-                {/*                <Typography variant="body2" color="textSecondary" component="p">*/}
-                {/*                    This is the Project 3*/}
-                {/*                </Typography>*/}
-                {/*            </CardContent>*/}
-                {/*        </CardActionArea>*/}
-                {/*        <CardActions>*/}
-                {/*            <Button size="small" color="primary">*/}
-                {/*                Share*/}
-                {/*            </Button>*/}
-                {/*            <Button size="small" color="primary">*/}
-                {/*                Live Demo*/}
-                {/*            </Button>*/}
-                {/*        </CardActions>*/}
-                {/*    </Card>*/}
-                {/*</Grid>*/}
-                {/*/!* Project 4 *!/*/}
-                {/*<Grid item xs={12} sm={8} md={6}>*/}
-                {/*    <Card className={classes.cardContainer}>*/}
-                {/*        <CardActionArea>*/}
-                {/*            <CardMedia*/}
-                {/*                component="img"*/}
-                {/*                alt="Project 4"*/}
-                {/*                height="140"*/}
-                {/*                image={project4}*/}
-                {/*            />*/}
-                {/*            <CardContent>*/}
-                {/*                <Typography gutterBottom variant="h5">*/}
-                {/*                    Project 4*/}
-                {/*                </Typography>*/}
-                {/*                <Typography variant="body2" color="textSecondary" component="p">*/}
-                {/*                    This is the Project 4*/}
-                {/*                </Typography>*/}
-                {/*            </CardContent>*/}
-                {/*        </CardActionArea>*/}
-                {/*        <CardActions>*/}
-                {/*            <Button size="small" color="primary">*/}
-                {/*                Share*/}
-                {/*            </Button>*/}
-                {/*            <Button size="small" color="primary">*/}
-                {/*                Live Demo*/}
-                {/*            </Button>*/}
-                {/*        </CardActions>*/}
-                {/*    </Card>*/}
-                {/*</Grid>*/}
+                <Grid item xs={12} sm={8} md={6}>
+                    <Card className={classes.cardContainer}>
+                        <CardActionArea>
+                            <CardMedia
+                                component="img"
+                                alt="Project 1"
+                                height="140"
+                                image={project1}
+                            />
+                            <CardContent>
+                                <Typography gutterBottom variant="h5">
+                                    DNA Tracker (2016)
+                                </Typography>
+                                <Typography variant="body2" color="textSecondary" component="p">
+                                    A website that helps identify the DNA sequence of the wild animals to prevent the illegal exploitation and trade in wildlife.
+                                </Typography>
+                            </CardContent>
+                        </CardActionArea>
+                        {/*<CardActions>*/}
+                        {/*    <Button size="small" color="primary">*/}
+                        {/*        Share*/}
+                        {/*    </Button>*/}
+                        {/*    <Button size="small" color="primary">*/}
+                        {/*        Live Demo*/}
+                        {/*    </Button>*/}
+                        {/*</CardActions>*/}
+                    </Card>
+                </Grid>
             </Grid>
         </Box>
     );
