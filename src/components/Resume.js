@@ -3,6 +3,7 @@ import {makeStyles} from "@material-ui/core/styles";
 import {Box, Typography} from "@material-ui/core";
 import Navbar from "./Navbar";
 import {Cell, Grid} from "react-mdl";
+import honor from "../images/signate.jpeg"
 
 const useStyles = makeStyles(theme => ({
     mainContainer: {
@@ -181,7 +182,9 @@ const Resume = () => {
                         </Typography>
                         <Typography variant="subtitle1" style={{color: "#aed6dc"}}>
                             Flight and Hotel Price Prediction <br/>
-                            Data visualization and models improvement for training data
+                            Data visualization <br/>
+                            Models improvement <br/>
+                            Web product development <br/>
                         </Typography>
                     </Box>
                 </Box>
@@ -193,12 +196,16 @@ const Resume = () => {
                             SKILLS
                         </Typography>
                         <ul>
-                            <li class="html">Python</li>
-                            <li class="css">C/C++</li>
-                            <li class="js">Django</li>
-                            <li className="html">Python</li>
-                            <li className="css">C/C++</li>
-                            <li className="js">Django</li>
+                            <li className="python">Python</li>
+                            <li class="cplus">C++</li>
+                            <li class="cplus">C</li>
+                            <li class="django">Django</li>
+                            <li className="css">HTML, CSS, JavaScript</li>
+                            <li className="php">PHP</li>
+                            <li className="php">Laravel</li>
+                            <li className="data">Data Structures and Algorithms</li>
+                            <li className="data">Machine Learning</li>
+                            <li className="data">Data Analysis</li>
                         </ul>
                     </Cell>
                     <Cell col={6}>
@@ -206,12 +213,29 @@ const Resume = () => {
                             LANGUAGES
                         </Typography>
                         <ul>
-                            <li class="html">Vietnamese</li>
-                            <li class="css">English</li>
-                            <li class="js">Japanese</li>
+                            <li class="vi">Vietnamese</li>
+                            <li class="en">English</li>
+                            <li class="ja">Japanese</li>
                         </ul>
                     </Cell>
                 </Grid>
+            </Box>
+            <Box className={classes.mainContainer}>
+                <Typography variant="h4" align="center" className={classes.heading}>
+                    HONORS AND AWARDS
+                </Typography>
+                <Box component="div" className={classes.timeLine}>
+                    <Typography
+                        variant="h2"
+                        className={`${classes.timeLineYear} ${classes.timeLineItem}`}>2019
+                    </Typography>
+                    <Box component="div" className={classes.timeLineItem}>
+                        <Typography variant="h5" className={classes.subHeading}>
+                            5th place in マイナビ × SIGNATE Student Cup 2019: 賃貸物件の家賃予測
+                        </Typography>
+                        <img src={honor} alt="Signate" style={{height: "160px", width: "240px"}}/>;
+                    </Box>
+                </Box>
             </Box>
         </div>
     )

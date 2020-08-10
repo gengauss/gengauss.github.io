@@ -93,7 +93,7 @@ const Navbar = () => {
                             <Menu style={{fontSize: 30, color: "#457b9d"}}/>
                         </IconButton>
                         <Typography variant="h5" style={{color: "#1b2735"}}>
-                            NGUYEN ANH
+                            ANH NGUYEN
                         </Typography>
                         <MobilRightMenuSlider
                             // anchor="right"
