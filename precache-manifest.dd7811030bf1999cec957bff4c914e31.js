@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "5975c638422c359e6bbbaffa3526f206",
+    "revision": "494fc6683882f2ab8526e583986b14e2",
     "url": "/index.html"
   },
   {
-    "revision": "49b078f37856cce1e28d",
+    "revision": "5b83e26219b428779949",
     "url": "/static/css/2.e4346227.chunk.css"
   },
   {
-    "revision": "2d1977f2e4f40803b94e",
-    "url": "/static/css/main.9b9a16f5.chunk.css"
+    "revision": "80529b9d51bcefc0eca3",
+    "url": "/static/css/main.30d12f59.chunk.css"
   },
   {
-    "revision": "49b078f37856cce1e28d",
-    "url": "/static/js/2.12f8f54b.chunk.js"
+    "revision": "5b83e26219b428779949",
+    "url": "/static/js/2.57db425a.chunk.js"
   },
   {
     "revision": "4233e42ae1d14a4f0f23cb066c59a9a3",
-    "url": "/static/js/2.12f8f54b.chunk.js.LICENSE.txt"
+    "url": "/static/js/2.57db425a.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "2d1977f2e4f40803b94e",
-    "url": "/static/js/main.f9a0b329.chunk.js"
+    "revision": "80529b9d51bcefc0eca3",
+    "url": "/static/js/main.eec8fe30.chunk.js"
   },
   {
     "revision": "dd8147bbe7734801bdde",
@@ -42,5 +42,9 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "5dc9f6c0cf7cacc18667dad8407f6cd0",
     "url": "/static/media/findingfriend.5dc9f6c0.jpeg"
+  },
+  {
+    "revision": "fd681462c0947869d915ad600471be5e",
+    "url": "/static/media/signate.fd681462.jpeg"
   }
 ]);

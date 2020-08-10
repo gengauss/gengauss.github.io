@@ -1,29 +1,30 @@
 {
   "files": {
-    "main.css": "/static/css/main.9b9a16f5.chunk.css",
-    "main.js": "/static/js/main.f9a0b329.chunk.js",
-    "main.js.map": "/static/js/main.f9a0b329.chunk.js.map",
+    "main.css": "/static/css/main.30d12f59.chunk.css",
+    "main.js": "/static/js/main.eec8fe30.chunk.js",
+    "main.js.map": "/static/js/main.eec8fe30.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.e312f208.js",
     "runtime-main.js.map": "/static/js/runtime-main.e312f208.js.map",
     "static/css/2.e4346227.chunk.css": "/static/css/2.e4346227.chunk.css",
-    "static/js/2.12f8f54b.chunk.js": "/static/js/2.12f8f54b.chunk.js",
-    "static/js/2.12f8f54b.chunk.js.map": "/static/js/2.12f8f54b.chunk.js.map",
+    "static/js/2.57db425a.chunk.js": "/static/js/2.57db425a.chunk.js",
+    "static/js/2.57db425a.chunk.js.map": "/static/js/2.57db425a.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.346f0cad0d5986616b989e8a6dd73d1f.js": "/precache-manifest.346f0cad0d5986616b989e8a6dd73d1f.js",
+    "precache-manifest.dd7811030bf1999cec957bff4c914e31.js": "/precache-manifest.dd7811030bf1999cec957bff4c914e31.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.e4346227.chunk.css.map": "/static/css/2.e4346227.chunk.css.map",
-    "static/css/main.9b9a16f5.chunk.css.map": "/static/css/main.9b9a16f5.chunk.css.map",
-    "static/js/2.12f8f54b.chunk.js.LICENSE.txt": "/static/js/2.12f8f54b.chunk.js.LICENSE.txt",
+    "static/css/main.30d12f59.chunk.css.map": "/static/css/main.30d12f59.chunk.css.map",
+    "static/js/2.57db425a.chunk.js.LICENSE.txt": "/static/js/2.57db425a.chunk.js.LICENSE.txt",
     "static/media/avatar.png": "/static/media/avatar.e25f06a6.png",
     "static/media/cslearning.jpeg": "/static/media/cslearning.887d0d0b.jpeg",
     "static/media/dnatracker.png": "/static/media/dnatracker.69872d6b.png",
-    "static/media/findingfriend.jpeg": "/static/media/findingfriend.5dc9f6c0.jpeg"
+    "static/media/findingfriend.jpeg": "/static/media/findingfriend.5dc9f6c0.jpeg",
+    "static/media/signate.jpeg": "/static/media/signate.fd681462.jpeg"
   },
   "entrypoints": [
     "static/js/runtime-main.e312f208.js",
     "static/css/2.e4346227.chunk.css",
-    "static/js/2.12f8f54b.chunk.js",
-    "static/css/main.9b9a16f5.chunk.css",
-    "static/js/main.f9a0b329.chunk.js"
+    "static/js/2.57db425a.chunk.js",
+    "static/css/main.30d12f59.chunk.css",
+    "static/js/main.eec8fe30.chunk.js"
   ]
 }
