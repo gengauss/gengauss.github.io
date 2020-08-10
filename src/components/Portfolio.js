@@ -1,16 +1,6 @@
 import React from "react";
 import {makeStyles} from "@material-ui/core/styles";
-import {
-    Box,
-    Button,
-    Card,
-    CardActionArea,
-    CardActions,
-    CardContent,
-    CardMedia,
-    Grid,
-    Typography
-} from "@material-ui/core"
+import {Box, Card, CardActionArea, CardContent, CardMedia, Grid, Typography} from "@material-ui/core"
 import Navbar from "./Navbar";
 import project1 from "../images/dnatracker.png"
 import project2 from "../images/cslearning.jpeg"

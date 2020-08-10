@@ -233,7 +233,7 @@ const Resume = () => {
                         <Typography variant="h5" className={classes.subHeading}>
                             5th place in マイナビ × SIGNATE Student Cup 2019: 賃貸物件の家賃予測
                         </Typography>
-                        <img src={honor} alt="Signate" style={{height: "160px", width: "240px"}}/>;
+                        {/*<img src={honor} alt="Signate" style={{height: "160px", width: "240px"}}/>;*/}
                     </Box>
                 </Box>
             </Box>
