@@ -50,7 +50,7 @@ const Contacts = () => {
     const classes = useStyles()
     return (
         <Box component="div" style={{background: "#4a536b", height: "100vh"}}>
-            <Navbar/>
+            <Navbar style={{position: "fixed"}}/>
             <Particles
                 style={{backgroundColor: "#4a536b", position: "fixed"}}
                 canvasClassName={classes.particlesCanva}
