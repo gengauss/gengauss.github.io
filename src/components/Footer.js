@@ -1,8 +1,9 @@
 import React from "react";
 import {BottomNavigation, BottomNavigationAction, makeStyles} from "@material-ui/core";
-import Facebook from "@material-ui/icons/Facebook";
-import Twitter from "@material-ui/icons/Twitter";
-import Instagram from "@material-ui/icons/Instagram";
+import LinkedIn from '@material-ui/icons/LinkedIn';
+import GitHub from '@material-ui/icons/GitHub';
+import Language from '@material-ui/icons/Language';
+
 
 const useStyles = makeStyles({
     root: {
@@ -23,24 +24,24 @@ const useStyles = makeStyles({
 const Footer = () => {
     const classes = useStyles()
     return (
-        <BottomNavigation width="auto" style={{background: "#aed6dc"}}>
+        <BottomNavigation width="auto" style={{background: "#85B3D1FF"}}>
             <BottomNavigationAction
-                href="https://facebook.com/shiroemon.madeon.7"
+                href="https://www.linkedin.com/in/nguyenquynhanh99/"
                 className={classes.root}
                 style={{padding: 0}}
-                icon={<Facebook/>}
+                icon={<LinkedIn/>}
             />
             <BottomNavigationAction
-                href="https://twitter.com/gaussshiroemon"
+                href="https://github.com/gengauss"
                 className={classes.root}
                 style={{padding: 0}}
-                icon={<Twitter/>}
+                icon={<GitHub/>}
             />
             <BottomNavigationAction
-                href="https://www.instagram.com/gaussshiroemon/"
+                href="http://gengauss.github.io/"
                 className={classes.root}
                 style={{padding: 0}}
-                icon={<Instagram/>}
+                icon={<Language/>}
             />
         </BottomNavigation>
     )

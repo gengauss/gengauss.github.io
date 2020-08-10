@@ -15,7 +15,7 @@ import {
 } from "@material-ui/core";
 import {makeStyles} from "@material-ui/core/styles";
 import MobilRightMenuSlider from "@material-ui/core/Drawer"
-import {Apps, ArrowBack, AssignmentInd, ContactMail, Home} from "@material-ui/icons";
+import {Apps, AssignmentInd, ContactMail, Home, Menu } from "@material-ui/icons";
 import avatar from '../avatar.png'
 import Footer from './Footer'
 
@@ -23,7 +23,7 @@ import Footer from './Footer'
 const useStyles = makeStyles(theme => ({
     menuSliderContainer: {
         width: 250,
-        background: "#aed6dc",
+        background: "#85B3D1FF",
         height: "100%",
         fontSize: 14
     },
@@ -90,9 +90,9 @@ const Navbar = () => {
                 <AppBar position="static" style={{background: "#ff9a8d"}}>
                     <Toolbar>
                         <IconButton onClick={toggleSlider("right", true)}>
-                            <ArrowBack style={{color: "#aed6dc"}}/>
+                            <Menu style={{fontSize: 30, color: "#85B3D1FF"}}/>
                         </IconButton>
-                        <Typography variant="h5" style={{color: "#304040"}}>
+                        <Typography variant="h5" style={{color: "#4a536b"}}>
                             NGUYEN ANH
                         </Typography>
                         <MobilRightMenuSlider

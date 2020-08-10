@@ -193,51 +193,21 @@ const Resume = () => {
                         <Typography variant="h4" align="center" className={classes.heading}>
                             SKILLS
                         </Typography>
-                        <Skills
-                            skill="Python"
-                            progress={90}
-                        />
-                        <Skills
-                            skill="C/C++"
-                            progress={90}
-                        />
-                        <Skills
-                            skill="Django"
-                            progress={80}
-                        />
-                        <Skills
-                            skill="Machine Learning"
-                            progress={80}
-                        />
-                        <Skills
-                            skill="Data Analysis"
-                            progress={80}
-                        />
-                        <Skills
-                            skill="PHP"
-                            progress={40}
-                        />
-                        <Skills
-                            skill="Laravel"
-                            progress={40}
-                        />
+                        <ul>
+                            <li class="html">Python</li>
+                            <li class="css">C/C++</li>
+                            <li class="js">Django</li>
+                        </ul>
                     </Cell>
                     <Cell col={6}>
                         <Typography variant="h4" align="center" className={classes.heading}>
                             LANGUAGES
                         </Typography>
-                        <Skills
-                            skill="Vietnamese"
-                            progress={100}
-                        />
-                        <Skills
-                            skill="English"
-                            progress={90}
-                        />
-                        <Skills
-                            skill="Japanese"
-                            progress={70}
-                        />
+                        <ul>
+                            <li class="html">Vietnamese</li>
+                            <li class="css">English</li>
+                            <li class="js">Japanese</li>
+                        </ul>
                     </Cell>
                 </Grid>
             </Box>

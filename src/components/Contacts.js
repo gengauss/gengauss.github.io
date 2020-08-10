@@ -4,6 +4,10 @@ import {Box, Button, Grid, TextField, Typography} from "@material-ui/core";
 import SendIcon from "@material-ui/icons/Send"
 import Navbar from "./Navbar";
 import Particles from "react-particles-js";
+import Facebook from "@material-ui/icons/Facebook";
+import Twitter from "@material-ui/icons/Twitter";
+import Instagram from "@material-ui/icons/Instagram";
+
 
 const useStyles = makeStyles(theme => ({
     form: {
@@ -19,8 +23,7 @@ const useStyles = makeStyles(theme => ({
         borderColor: "#ff9a8d"
     },
     particlesCanva: {
-        position: "fixed",
-        opacity: "0.5"
+        position: "fixed"
     }
 }))
 
@@ -92,30 +95,30 @@ const Contacts = () => {
                         }
                     }
                 }}/>
-            <Grid container justify="center">
-                <Box component="form" className={classes.form} style={{position: "fixed"}}>
-                    <Typography variant="h5"
-                                style={{
-                                    color: "#ff9a8d",
-                                    textAlign: "center",
-                                    textTransform: "uppercase"
-                                }}>
-                        contact me
-                    </Typography>
-                    <InputField fullWidth={true} label="Name" variant="outlined" margin="dense" size="medium"
-                                inputProps={{style: {color: "white"}}}/>
-                    <br/>
-                    <InputField fullWidth={true} label="Email" variant="outlined" margin="dense" size="medium"
-                                inputProps={{style: {color: "white"}}}/>
-                    <br/>
-                    <InputField fullWidth={true} label="Comment" variant="outlined" margin="dense" size="medium"
-                                inputProps={{style: {color: "white"}}}/>
-                    <br/>
-                    <Button className={classes.button} variant="outlined" fullWidth={true} endIcon={<SendIcon/>}>
-                        send
-                    </Button>
-                </Box>
-            </Grid>
+            {/*<Grid container justify="center">*/}
+            {/*    <Box component="form" className={classes.form} style={{position: "fixed"}}>*/}
+            {/*        <Typography variant="h5"*/}
+            {/*                    style={{*/}
+            {/*                        color: "#ff9a8d",*/}
+            {/*                        textAlign: "center",*/}
+            {/*                        textTransform: "uppercase"*/}
+            {/*                    }}>*/}
+            {/*            contact me*/}
+            {/*        </Typography>*/}
+            {/*        <InputField fullWidth={true} label="Name" variant="outlined" margin="dense" size="medium"*/}
+            {/*                    inputProps={{style: {color: "white"}}}/>*/}
+            {/*        <br/>*/}
+            {/*        <InputField fullWidth={true} label="Email" variant="outlined" margin="dense" size="medium"*/}
+            {/*                    inputProps={{style: {color: "white"}}}/>*/}
+            {/*        <br/>*/}
+            {/*        <InputField fullWidth={true} label="Comment" variant="outlined" margin="dense" size="medium"*/}
+            {/*                    inputProps={{style: {color: "white"}}}/>*/}
+            {/*        <br/>*/}
+            {/*        <Button className={classes.button} variant="outlined" fullWidth={true} endIcon={<SendIcon/>}>*/}
+            {/*            send*/}
+            {/*        </Button>*/}
+            {/*    </Box>*/}
+            {/*</Grid>*/}
         </Box>
     );
 };
