@@ -1,9 +1,8 @@
 import React from "react";
-import { makeStyles } from "@material-ui/core/styles";
-import { Typography, Box } from "@material-ui/core";
+import {makeStyles} from "@material-ui/core/styles";
+import {Box, Typography} from "@material-ui/core";
 import Navbar from "./Navbar";
-import Skills from './skills';
-import {Grid, Cell} from "react-mdl";
+import {Cell, Grid} from "react-mdl";
 
 const useStyles = makeStyles(theme => ({
     mainContainer: {

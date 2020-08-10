@@ -1,7 +1,6 @@
 import React from "react";
-import {makeStyles, withStyles} from "@material-ui/core/styles"
-import {BottomNavigation, BottomNavigationAction, Box, Button, Grid, TextField, Typography} from "@material-ui/core";
-import SendIcon from "@material-ui/icons/Send"
+import {makeStyles} from "@material-ui/core/styles"
+import {Box, Grid, Typography} from "@material-ui/core";
 import Navbar from "./Navbar";
 import Particles from "react-particles-js";
 import Facebook from "@material-ui/icons/Facebook";
@@ -10,7 +9,6 @@ import Instagram from "@material-ui/icons/Instagram";
 import YouTube from '@material-ui/icons/YouTube';
 import Email from '@material-ui/icons/Email';
 import Phone from '@material-ui/icons/Phone';
-import {Cell} from "react-mdl";
 
 
 const useStyles = makeStyles(theme => ({
