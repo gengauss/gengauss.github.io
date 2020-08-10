@@ -52,8 +52,9 @@ const InputField = withStyles({
 const Contacts = () => {
     const classes = useStyles()
     return (
-        <Box component="div" style={{background: "#4a536b", height: "100vh"}}>
-            <Navbar style={{position: "fixed"}}/>
+        <div style={{position: "fixed"}}>
+        <Box component="div" style={{background: "#4a536b", height: "100vh", width: "200vh"}}>
+            <Navbar />
             <Particles
                 style={{backgroundColor: "#4a536b", position: "fixed"}}
                 canvasClassName={classes.particlesCanva}
@@ -95,31 +96,32 @@ const Contacts = () => {
                         }
                     }
                 }}/>
-            {/*<Grid container justify="center">*/}
-            {/*    <Box component="form" className={classes.form} style={{position: "fixed"}}>*/}
-            {/*        <Typography variant="h5"*/}
-            {/*                    style={{*/}
-            {/*                        color: "#ff9a8d",*/}
-            {/*                        textAlign: "center",*/}
-            {/*                        textTransform: "uppercase"*/}
-            {/*                    }}>*/}
-            {/*            contact me*/}
-            {/*        </Typography>*/}
-            {/*        <InputField fullWidth={true} label="Name" variant="outlined" margin="dense" size="medium"*/}
-            {/*                    inputProps={{style: {color: "white"}}}/>*/}
-            {/*        <br/>*/}
-            {/*        <InputField fullWidth={true} label="Email" variant="outlined" margin="dense" size="medium"*/}
-            {/*                    inputProps={{style: {color: "white"}}}/>*/}
-            {/*        <br/>*/}
-            {/*        <InputField fullWidth={true} label="Comment" variant="outlined" margin="dense" size="medium"*/}
-            {/*                    inputProps={{style: {color: "white"}}}/>*/}
-            {/*        <br/>*/}
-            {/*        <Button className={classes.button} variant="outlined" fullWidth={true} endIcon={<SendIcon/>}>*/}
-            {/*            send*/}
-            {/*        </Button>*/}
-            {/*    </Box>*/}
-            {/*</Grid>*/}
+            <Grid container justify="center">
+                <Box component="form" className={classes.form} style={{position: "fixed"}}>
+                    <Typography variant="h5"
+                                style={{
+                                    color: "#ff9a8d",
+                                    textAlign: "center",
+                                    textTransform: "uppercase"
+                                }}>
+                        contact me
+                    </Typography>
+                    <InputField fullWidth={true} label="Name" variant="outlined" margin="dense" size="medium"
+                                inputProps={{style: {color: "white"}}}/>
+                    <br/>
+                    <InputField fullWidth={true} label="Email" variant="outlined" margin="dense" size="medium"
+                                inputProps={{style: {color: "white"}}}/>
+                    <br/>
+                    <InputField fullWidth={true} label="Comment" variant="outlined" margin="dense" size="medium"
+                                inputProps={{style: {color: "white"}}}/>
+                    <br/>
+                    <Button className={classes.button} variant="outlined" fullWidth={true} endIcon={<SendIcon/>}>
+                        send
+                    </Button>
+                </Box>
+            </Grid>
         </Box>
+        </div>
     );
 };
 
