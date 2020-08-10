@@ -52,7 +52,7 @@ const Contacts = () => {
         <Box component="div" style={{background: "#4a536b", height: "100vh"}}>
             <Navbar/>
             <Particles
-                style={{backgroundColor: "#4a536b"}}
+                style={{backgroundColor: "#4a536b", position: "fixed"}}
                 canvasClassName={classes.particlesCanva}
                 params={{
                     particles: {
@@ -93,7 +93,7 @@ const Contacts = () => {
                     }
                 }}/>
             <Grid container justify="center">
-                <Box component="form" className={classes.form}>
+                <Box component="form" className={classes.form} style={{position: "fixed"}}>
                     <Typography variant="h5"
                                 style={{
                                     color: "#ff9a8d",
