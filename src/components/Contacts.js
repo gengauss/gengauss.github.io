@@ -1,12 +1,16 @@
 import React from "react";
 import {makeStyles, withStyles} from "@material-ui/core/styles"
-import {Box, Button, Grid, TextField, Typography} from "@material-ui/core";
+import {BottomNavigation, BottomNavigationAction, Box, Button, Grid, TextField, Typography} from "@material-ui/core";
 import SendIcon from "@material-ui/icons/Send"
 import Navbar from "./Navbar";
 import Particles from "react-particles-js";
 import Facebook from "@material-ui/icons/Facebook";
 import Twitter from "@material-ui/icons/Twitter";
 import Instagram from "@material-ui/icons/Instagram";
+import YouTube from '@material-ui/icons/YouTube';
+import Email from '@material-ui/icons/Email';
+import Phone from '@material-ui/icons/Phone';
+import {Cell} from "react-mdl";
 
 
 const useStyles = makeStyles(theme => ({
@@ -24,30 +28,34 @@ const useStyles = makeStyles(theme => ({
     },
     particlesCanva: {
         position: "fixed"
+    },
+    root : {
+        color: "#aed6dc",
+        fontSize: 50
     }
 }))
 
-const InputField = withStyles({
-    root: {
-        "& label.Mui-focused": {
-            color: "#ff9a8d",
-        },
-        "& label": {
-            color: "#aed6dc"
-        },
-        "& .MuiOutlinedInput-root": {
-            "& fieldset": {
-                borderColor: "#aed6dc",
-            },
-            "&:hover fieldset": {
-                borderColor: "#aed6dc"
-            },
-            "&.Mui-focused fieldset": {
-                borderColor: "#aed6dc"
-            }
-        }
-    },
-})(TextField);
+// const InputField = withStyles({
+//     root: {
+//         "& label.Mui-focused": {
+//             color: "#ff9a8d",
+//         },
+//         "& label": {
+//             color: "#aed6dc"
+//         },
+//         "& .MuiOutlinedInput-root": {
+//             "& fieldset": {
+//                 borderColor: "#aed6dc",
+//             },
+//             "&:hover fieldset": {
+//                 borderColor: "#aed6dc"
+//             },
+//             "&.Mui-focused fieldset": {
+//                 borderColor: "#aed6dc"
+//             }
+//         }
+//     },
+// })(TextField);
 
 const Contacts = () => {
     const classes = useStyles()
@@ -97,27 +105,99 @@ const Contacts = () => {
                     }
                 }}/>
             <Grid container justify="center">
-                <Box component="form" className={classes.form} style={{position: "fixed"}}>
+                <Box className={classes.form} style={{position: "fixed"}}>
                     <Typography variant="h5"
                                 style={{
                                     color: "#ff9a8d",
                                     textAlign: "center",
                                     textTransform: "uppercase"
                                 }}>
-                        contact me
+                        contact info
                     </Typography>
-                    <InputField fullWidth={true} label="Name" variant="outlined" margin="dense" size="medium"
-                                inputProps={{style: {color: "white"}}}/>
                     <br/>
-                    <InputField fullWidth={true} label="Email" variant="outlined" margin="dense" size="medium"
-                                inputProps={{style: {color: "white"}}}/>
                     <br/>
-                    <InputField fullWidth={true} label="Comment" variant="outlined" margin="dense" size="medium"
-                                inputProps={{style: {color: "white"}}}/>
+                    <Typography variant="h6"
+                                style={{
+                                    color: "#ff9a8d",
+                                    textAlign: "center",
+                                    textTransform: "uppercase"
+                                }}>
+                        social media
+                    </Typography>
+                    {/*<InputField fullWidth={true} label="Name" variant="outlined" margin="dense" size="medium"*/}
+                    {/*            inputProps={{style: {color: "white"}}}/>*/}
+                    {/*<br/>*/}
+                    {/*<InputField fullWidth={true} label="Email" variant="outlined" margin="dense" size="medium"*/}
+                    {/*            inputProps={{style: {color: "white"}}}/>*/}
+                    {/*<br/>*/}
+                    {/*<InputField fullWidth={true} label="Comment" variant="outlined" margin="dense" size="medium"*/}
+                    {/*            inputProps={{style: {color: "white"}}}/>*/}
+                    {/*<br/>*/}
+                    {/*<Button className={classes.button} variant="outlined" fullWidth={true} endIcon={<SendIcon/>}>*/}
+                    {/*    send*/}
+                    {/*</Button>*/}
+                    <Grid container justify="center" alignItems="center">
+                        <Facebook
+                            href="https://www.linkedin.com/in/nguyenquynhanh99/"
+                            className={classes.root}
+                            style={{padding: 0}}
+                            icon={<Facebook/>}
+                        />
+                        <Twitter
+                            href="https://facebook.com/shiroemon.madeon.7"
+                            className={classes.root}
+                            style={{padding: 0}}
+                            icon={<Twitter/>}
+                        />
+                        <Instagram
+                            href="https://www.instagram.com/gaussshiroemon"
+                            className={classes.root}
+                            style={{padding: 0}}
+                            icon={<Instagram/>}
+                        />
+                        <YouTube
+                            href="https://www.youtube.com/channel/UChQUoXmV9lBOHR5JrtEO1GQ"
+                            className={classes.root}
+                            style={{padding: 0}}
+                            icon={<YouTube/>}
+                        />
+                    </Grid>
                     <br/>
-                    <Button className={classes.button} variant="outlined" fullWidth={true} endIcon={<SendIcon/>}>
-                        send
-                    </Button>
+                    <Typography variant="h6"
+                                style={{
+                                    color: "#ff9a8d",
+                                    textAlign: "center",
+                                    textTransform: "uppercase"
+                                }}>
+                        email
+                    </Typography>
+                    <Grid container justify="center" alignItems="center">
+                        <Email style={{
+                            color: "#ff9a8d",
+                            textAlign: "center",
+                            textTransform: "uppercase"}}/> <Typography style={{color: "#aed6dc", fontSize: 18}}>nguyenqanh1804@gmail.com</Typography>
+                    </Grid>
+                    <br/>
+                    <Typography variant="h6"
+                                style={{
+                                    color: "#ff9a8d",
+                                    textAlign: "center",
+                                    textTransform: "uppercase"
+                                }}>
+                        phone
+                    </Typography>
+                    <Grid container justify="center" alignItems="center">
+                        <Phone style={{
+                            color: "#ff9a8d",
+                            textAlign: "center",
+                            textTransform: "uppercase"}}/> <Typography style={{color: "#aed6dc", fontSize: 18}}>+84-989393853</Typography>
+                    </Grid>
+                    <Grid container justify="center" alignItems="center">
+                        <Phone style={{
+                        color: "#ff9a8d",
+                        textAlign: "center",
+                        textTransform: "uppercase"}}/> <Typography style={{color: "#aed6dc", fontSize: 18}}>+81-7040358554</Typography>
+                    </Grid>
                 </Box>
             </Grid>
         </Box>
