@@ -2,9 +2,9 @@ import React from "react";
 import {makeStyles} from "@material-ui/core/styles";
 import {Box, Card, CardActionArea, CardContent, CardMedia, Grid, Typography} from "@material-ui/core"
 import Navbar from "./Navbar";
-import project1 from "../images/dnatracker.png"
-import project2 from "../images/cslearning.jpeg"
-import project3 from "../images/findingfriend.jpeg"
+import project1 from "../images/dnatracker.jpg"
+import project2 from "../images/cslearning.jpg"
+import project3 from "../images/findingfriend.jpg"
 
 
 const useStyles = makeStyles({

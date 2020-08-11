@@ -134,29 +134,32 @@ const Contacts = () => {
                     {/*<Button className={classes.button} variant="outlined" fullWidth={true} endIcon={<SendIcon/>}>*/}
                     {/*    send*/}
                     {/*</Button>*/}
-                    <br/>
                     <Grid container justify="center" alignItems="center" style={{margin: "6px"}}>
                         <Button
                             href="https://facebook.com/shiroemon.madeon.7"
                             className={classes.root}
+                            target="_blank"
                             // style={{padding: 0}}
                             startIcon={<Facebook />}
                         />
                         <Button
                             href="https://twitter.com/gaussshiroemon"
                             className={classes.root}
+                            target="_blank"
                             // style={{padding: 0}}
                             startIcon={<Twitter/>}
                         />
                         <Button
                             href="https://www.instagram.com/gaussshiroemon"
                             className={classes.root}
+                            target="_blank"
                             // style={{padding: 0}}
                             startIcon={<Instagram/>}
                         />
                         <Button
                             href="https://www.youtube.com/channel/UChQUoXmV9lBOHR5JrtEO1GQ"
                             className={classes.root}
+                            target="_blank"
                             // style={{padding: 0}}
                             startIcon={<YouTube/>}
                         />

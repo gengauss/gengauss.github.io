@@ -28,19 +28,22 @@ const Footer = () => {
             <BottomNavigationAction
                 href="https://www.linkedin.com/in/nguyenquynhanh99/"
                 className={classes.root}
-                style={{padding: 0}}
+                style={{padding: 0, display: "table-cell"}}
+                target="_blank"
                 icon={<LinkedIn/>}
             />
             <BottomNavigationAction
                 href="https://github.com/gengauss"
                 className={classes.root}
-                style={{padding: 0}}
+                style={{padding: 0, display: "table-cell"}}
+                target="_blank"
                 icon={<GitHub/>}
             />
             <BottomNavigationAction
                 href="http://gengauss.github.io/"
                 className={classes.root}
-                style={{padding: 0}}
+                style={{padding: 0, display: "table-cell"}}
+                target="_blank"
                 icon={<Language/>}
             />
         </BottomNavigation>
