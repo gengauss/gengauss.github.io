@@ -61,7 +61,7 @@ const Contacts = () => {
     return (
         <div style={{position: "fixed"}}>
         <Box component="div" style={{background: "#4a536b", height: "100vh", width: "200vh"}}>
-            <Navbar />
+            <Navbar style={{width: "200vh"}} />
             <Particles
                 style={{backgroundColor: "#1b2735", position: "fixed"}}
                 canvasClassName={classes.particlesCanva}
