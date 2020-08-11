@@ -3,7 +3,6 @@ import {makeStyles} from "@material-ui/core/styles";
 import {Box, Typography} from "@material-ui/core";
 import Navbar from "./Navbar";
 import {Cell, Grid} from "react-mdl";
-import honor from "../images/signate.jpeg"
 
 const useStyles = makeStyles(theme => ({
     mainContainer: {
